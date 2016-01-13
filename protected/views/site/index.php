@@ -28,9 +28,9 @@ function DateThai($strDate) {
 
     <div class="box box-solid box-default">
         <div class="box-header">
-<!--            <div class="box-tools pull-right">
-                <button class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-chevron-down"></i></button>
-            </div>-->
+            <!--            <div class="box-tools pull-right">
+                            <button class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-chevron-down"></i></button>
+                        </div>-->
 
             <h3 class="box-title"><i class="glyphicon glyphicon-bullhorn"></i> ข่าวประชาสัมพันธ์ </h3>
         </div>
@@ -60,7 +60,17 @@ function DateThai($strDate) {
                             </h6>
                         </td>
                     </tr>                      
-
+                    <tr> 
+                        <td>
+                            <span class="label label-primary">25 พ.ย. 58</span> &nbsp;&nbsp;                    
+                            <strong> <a href="#">บันทึกเวรตรวจการพยาบาล</a> </strong>
+                            <h6><font color="#696969"> 
+                                <p>หน่วยงานที่เกี่ยวข้องสามารถเข้าใช้งานด้วยบัญชี Gmail ที่แจ้งไว้ ผ่านเมนู บันทึกเวรตรวจการ->เลือกเดือนที่จะบันทึกข้อมูล</p>
+                                <p>คู่มือบันทึกเวรตรวจการพยาบาล<a href="<?php echo Yii::app()->theme->baseUrl; ?>/doc/nurselog_manual.pdf" target="_blank">ดาวโหลดที่นี่</a></p>
+                                </font>
+                            </h6>
+                        </td>
+                    </tr>   
                 </tbody></table>                             
         </div><!-- /.box-body -->          
     </div><!-- /.box -->          

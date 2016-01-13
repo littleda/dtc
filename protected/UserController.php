@@ -184,7 +184,7 @@ class UserController extends Controller {
             }
         }
 
-        if (Yii::app()->session["userlogin"] == $model->username) {
+        if (Yii::app()->session["user_typelogin"] == 'ADMINISTRATOR') {
             $this->render('User', array(
                 'model' => $model
             ));

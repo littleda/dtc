@@ -106,7 +106,7 @@
                         <ul class="nav navbar-nav navbar-left">
                             <li class="active"><a href="index.php"><i class="glyphicon glyphicon-home"></i> หน้าแรก</a></li>
                             <?php
-                            if ((Yii::app()->session["user_typelogin"] == 'ADMINISTRATOR')|| (Yii::app()->session["user_typelogin"] == 'SUPERUSER')) {
+                            if ((Yii::app()->session["user_typelogin"] == 'ADMINISTRATOR')) {
                                 ?> 
                                 <li><a href="#">ข้อมูลทรัพยากรสุขภาพ</a></li>
                                 <li><a href="#">ข้อมูลเครือข่ายบริการสุขภาพ</a></li>
@@ -155,7 +155,7 @@
                                     </ul>
                                 </li>
                                 <?php
-                            } elseif ((Yii::app()->session["userlogin"] == '3820800015972')||(Yii::app()->session["userlogin"] == '3829900032575')) {
+                            } elseif ((Yii::app()->session["user_typelogin"] == 'SUPERUSER')) {
                                 ?>
                                 <li class="dropdown">
                                     <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
@@ -269,30 +269,14 @@
                                 </div>
                             </a>
                             <div id="collapse1" class="panel-collapse collapse">
-<!--                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัดการตรวจราชการประจำปี</div></a>
-                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัด Service Plan 12 สาขา</div></a>-->
-                                <a href="https://docs.google.com/spreadsheets/d/19GG24dkjr_aKIwGfTNsskdpmxbSbkGb23LMfhq9COcU/edit?usp=sharing" target="_blank"><div class="panel-body submenu">KPI Template 2558</div></a>
-                                <a href="https://docs.google.com/spreadsheets/d/10CsVOm961AUFPdol1LNhNYQy4na1zOEAoDPlV0gws8I/edit?usp=sharing" target="_blank"><div class="panel-body submenu">ตัวชี้วัดตรวจราชการและนิเทศงาน 2559</div></a>
-                                <a href="https://docs.google.com/spreadsheets/d/1cHajR6qOMArDEexUmYn93RYGPlvI0rmDFmOzO6S2Hkc/edit?usp=sharing" target="_blank"><div class="panel-body submenu">ตัวชี้วัดภาคบังคับ(THIP) 2559</div></a>
-<!--                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัดกลุ่มวินิจฉัยโรคร่วม DRG INDEX</div></a>-->
+                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัดการตรวจราชการประจำปี</div></a>
+                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัด Service Plan 12 สาขา</div></a>
+                                <a href="https://docs.google.com/spreadsheets/d/19GG24dkjr_aKIwGfTNsskdpmxbSbkGb23LMfhq9COcU/edit?usp=sharing" target="_blank"><div class="panel-body submenu">KPI Template</div></a>
+                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัดกลุ่มวินิจฉัยโรคร่วม DRG INDEX</div></a>
                                 <a href="https://docs.google.com/spreadsheets/d/18TcfDKQtRcx3poBki02u47H7K8ikFS0zGF1VQpwfJi4/edit?usp=sharing" target="_blank"><div class="panel-body submenu">ดัชนีชี้วัดคุณภาพทีมนำพัฒนาคุณภาพโรงพยาบาล</div></a>
-<!--                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัดคุณภาพ PCT</div></a>-->
-                                
+                                <a href="#"><div class="panel-body submenu">ดัชนีชี้วัดคุณภาพ PCT</div></a>
                             </div>                    
-                        </div>   
-<!--                          <div class="panel panel-default ">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                                <div class="panel-heading menu">
-                                    <h4 class="panel-title">
-                                        <i class="glyphicon glyphicon-chevron-right"></i> ตัวชี้วัดศูนย์พัฒนาคุณภาพ
-                                    </h4>
-                                </div>
-                            </a>
-                            <div id="collapse6" class="panel-collapse collapse">
-                                <a href="#"><div class="panel-body submenu">ตัวชี้วัดภาคบังคับ(THIP)</div></a>
-                                <a href="#"><div class="panel-body submenu">ตัวชี้วัดคุณภาพโรงพยาบาลพังงา</div></a>                               
-                            </div>                    
-                        </div>    -->
+                        </div>     
                         <div class="panel panel-default ">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                                 <div class="panel-heading menu">
@@ -301,23 +285,9 @@
                                     </h4>
                                 </div>
                             </a>
-                            <div id="collapse4" class="panel-collapse collapse">                                
-                                <a href="https://drive.google.com/open?id=1vhaV77MVaprl_Px7H0b_hWr8Yf1s56BYiR-sJbKRzWw" target="_blank"><div class="panel-body submenu">ประจำเดือนธันวาคม58</div></a>
-                                <a href="https://drive.google.com/open?id=1xRvlPbIeJ1mFXIvF2h-wq40XO--rrE92SLgbKlruKck" target="_blank"><div class="panel-body submenu">ประจำเดือนมกราคม59</div></a>
-                            </div>                    
-                        </div>  
-                         <div class="panel panel-default ">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                                <div class="panel-heading menu">
-                                    <h4 class="panel-title">
-                                        <i class="glyphicon glyphicon-chevron-right"></i> บันทึกสรุปยอดผู้ป่วยในหอผู้ป่วย
-                                    </h4>
-                                </div>
-                            </a>
-                            <div id="collapse5" class="panel-collapse collapse">
-<!--                                <a href="https://drive.google.com/open?id=1TS3ZHIXL_VnX1O3xvxRbP_IqQEOat13plDyTvWv02co" target="_blank"><div class="panel-body submenu">ประจำเดือนพฤศจิกายน58</div></a>-->
-                                <a href="https://drive.google.com/open?id=1ONdBK9nPATX_vdGb1bPhXMYfVI4veVKUtbhw_rO8Gwg" target="_blank"><div class="panel-body submenu">ประจำเดือนธันวาคม58</div></a>
-                                <a href="https://drive.google.com/open?id=1Z_9ozxINhZPfjYqNxqE8f7mM_rtnmY10SL0xU477IUg" target="_blank"><div class="panel-body submenu">ประจำเดือนมกราคม59</div></a>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <a href="https://drive.google.com/open?id=1TS3ZHIXL_VnX1O3xvxRbP_IqQEOat13plDyTvWv02co" target="_blank"><div class="panel-body submenu">ประจำเดือนพฤศจิกายน</div></a>
+                                <a href="https://drive.google.com/open?id=1ONdBK9nPATX_vdGb1bPhXMYfVI4veVKUtbhw_rO8Gwg" target="_blank"><div class="panel-body submenu">ประจำเดือนธันวาคม</div></a>                                
                             </div>                    
                         </div>  
                         <div class="panel panel-default">
@@ -346,7 +316,7 @@
                                 <a href="http://www.thcc.or.th" target="_blank"><div class="panel-body submenu">ศูนย์มาตรฐานรหัสและข้อมูลสุขภาพแห่งชาติ</div></a>
                                 <a href="http://www.this.or.th" target="_blank"><div class="panel-body submenu">ศูนย์พัฒนามาตรฐานระบบข้อมูลสุขภาพไทย</div></a>
                                 <a href="http://www.tmi.or.th" target="_blank"><div class="panel-body submenu">สมาคมเวชสารสนเทศไทย</div></a>
-                                <a href="http://www.iphdc.net" target="_blank"><div class="panel-body submenu"><t>HDC สสจ.พังงา</t></div></a>
+                                <a href="http://www.iphdc.net" target="_blank"><div class="panel-body submenu"><t>HCD สสจ.พังงา</t></div></a>
                             </div>                    
                         </div>
                     </div>
@@ -456,7 +426,7 @@
                                             <div class="panel-body"><a href="http://www.thcc.or.th" target="_blank">ศูนย์มาตรฐานรหัสและข้อมูลสุขภาพแห่งชาติ</a></div>
                                             <div class="panel-body"><a href="http://www.this.or.th" target="_blank">ศูนย์พัฒนามาตรฐานระบบข้อมูลสุขภาพไทย</a></div>
                                             <div class="panel-body"><a href="http://www.tmi.or.th" target="_blank">สมาคมเวชสารสนเทศไทย</a></div>
-                                            <div class="panel-body"><a href="http://www.iphdc.net" target="_blank">HDC สสจ.พังงา</a></div>
+                                            <div class="panel-body"><a href="http://www.iphdc.net" target="_blank">HCD สสจ.พังงา</a></div>
                                         </div>                    
                                     </div>
                                 </div>

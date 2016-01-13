@@ -27100,3 +27100,48 @@ Stack trace:
 REQUEST_URI=/yii-dtc/index.php?r=user/Insert&id=1
 HTTP_REFERER=http://localhost/yii-dtc/index.php?r=request/View
 ---
+2015/12/08 14:52:50 [error] [php] Trying to get property of non-object (F:\webapp\yii-dtc\protected\views\user\User.php:22)
+Stack trace:
+#0 F:\webapp\yii-dtc\framework\web\CController.php(869): UserController->renderFile()
+#1 F:\webapp\yii-dtc\framework\web\CController.php(782): UserController->renderPartial()
+#2 F:\webapp\yii-dtc\protected\controllers\UserController.php(190): UserController->render()
+#3 unknown(0): UserController->actionInsert()
+#4 F:\webapp\yii-dtc\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 F:\webapp\yii-dtc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 F:\webapp\yii-dtc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 F:\webapp\yii-dtc\framework\web\CController.php(286): UserController->runAction()
+#8 F:\webapp\yii-dtc\framework\web\CController.php(265): UserController->runActionWithFilters()
+#9 F:\webapp\yii-dtc\framework\web\CWebApplication.php(282): UserController->run()
+#10 F:\webapp\yii-dtc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 F:\webapp\yii-dtc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 F:\webapp\yii-dtc\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii-dtc/index.php?r=user/Insert&id=8
+in F:\webapp\yii-dtc\protected\views\user\User.php (22)
+in F:\webapp\yii-dtc\protected\controllers\UserController.php (190)
+in F:\webapp\yii-dtc\index.php (13)
+2015/12/08 14:56:55 [error] [php] Trying to get property of non-object (F:\webapp\yii-dtc\protected\controllers\UserController.php:187)
+Stack trace:
+#0 F:\webapp\yii-dtc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 F:\webapp\yii-dtc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 F:\webapp\yii-dtc\framework\web\CController.php(286): UserController->runAction()
+#3 F:\webapp\yii-dtc\framework\web\CController.php(265): UserController->runActionWithFilters()
+#4 F:\webapp\yii-dtc\framework\web\CWebApplication.php(282): UserController->run()
+#5 F:\webapp\yii-dtc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 F:\webapp\yii-dtc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 F:\webapp\yii-dtc\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii-dtc/index.php?r=user/Insert&id=8
+in F:\webapp\yii-dtc\protected\controllers\UserController.php (187)
+in F:\webapp\yii-dtc\index.php (13)
+2015/12/08 14:56:55 [error] [php] Trying to get property of non-object (F:\webapp\yii-dtc\protected\controllers\UserController.php:187)
+Stack trace:
+#0 F:\webapp\yii-dtc\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 F:\webapp\yii-dtc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 F:\webapp\yii-dtc\framework\web\CController.php(286): UserController->runAction()
+#3 F:\webapp\yii-dtc\framework\web\CController.php(265): UserController->runActionWithFilters()
+#4 F:\webapp\yii-dtc\framework\web\CWebApplication.php(282): UserController->run()
+#5 F:\webapp\yii-dtc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 F:\webapp\yii-dtc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 F:\webapp\yii-dtc\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii-dtc/index.php?r=user/Insert&id=8
+in F:\webapp\yii-dtc\protected\controllers\UserController.php (187)
+in F:\webapp\yii-dtc\index.php (13)
