@@ -9,7 +9,7 @@ class RequestController extends Controller {
         if (!empty(Yii::app()->session["user_typelogin"])) {
             $this->render('request_form');
         } else {
-            $this->redirect('index.php');
+            $this->redirect('index.php?r=user/Login');
         }
     }
 
@@ -45,7 +45,7 @@ class RequestController extends Controller {
     }
 
     function actionView($id = null) {
-        if (!empty(Yii::app()->session["user_typelogin"])) {
+       // if (!empty(Yii::app()->session["user_typelogin"])) {
             if (!empty($id)) {
                 $check = RequestModels::model()->findByPk($id);
                 echo "<script type=\"text/javascript\"> alert($check->status);</script>";
@@ -66,9 +66,9 @@ class RequestController extends Controller {
                 'criteria' => $criteria));
             $this->render('View', array("model" => $model,));
             // $this->render('View');
-        } else {
-            $this->redirect('index.php');
-        }
+        //} else {
+         //   $this->redirect('index.php');
+        //}
     }
 
 //    function actionChecked($id){

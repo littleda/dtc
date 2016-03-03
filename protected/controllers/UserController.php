@@ -23,7 +23,8 @@ class UserController extends Controller {
         } else {
             //print_r($models);
             // echo "<script type=\"text/javascript\"> alert(\"ใส่ข้อมูลไม่ถูกต้องนะจ๊ะ\");</script>"; 
-            $this->redirect(Yii::app()->homeUrl);
+            //$this->redirect(Yii::app()->homeUrl);
+            $this->render('Login');
         }
     }
 
@@ -31,7 +32,7 @@ class UserController extends Controller {
         unset(Yii::app()->session["userlogin"]);
         unset(Yii::app()->session["fullname"]);
         unset(Yii::app()->session["user_typelogin"]);
-        unset(Yii::app()->session["user_email"]);
+       // unset(Yii::app()->session["user_email"]);
         $this->redirect(Yii::app()->homeUrl);
     }
 
